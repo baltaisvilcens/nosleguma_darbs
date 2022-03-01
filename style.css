@@ -1,15 +1,10 @@
 * { 
-    position: sticky;
     padding: 0;
     margin: 0;
 }
 
 body { 
-    min-width: 630px;
-    left: 50px;
-    display: block; 
     position: relative;
-    width: 100%;
     height: 100vh;
     padding: 10px;
     background:linear-gradient(to bottom, #4a1fe7e0, #6022c442 90%);
@@ -38,7 +33,6 @@ body {
     font-size: 23px;
     line-height: 40px;
     margin-top: 70px;
-    display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -80,6 +74,7 @@ body {
     padding: 40px;
     height: 360px;
     border-radius: 130px;  
+    border-radius: 50%;
 } 
 
 .text_field {
@@ -96,3 +91,57 @@ body {
 .user { 
     color: black;
 }
+
+
+@media only screen and (max-width: 695px) {    
+    body {
+        width: 10px;
+        min-width: 300px;
+        min-height: 190px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: lightblue;
+      margin: auto;
+    }
+
+    .wrapper {
+        align-items: center;
+        margin-left: 30px;
+        height: 300px;
+        width: 470px;
+    }
+
+    .profila_bilde { 
+        margin: auto;
+        display: flex;
+        height: 170px;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    
+    .navigation {
+        margin: auto;
+        height: 115px;
+    }
+
+    .navigation a {
+        font-size: 16px;
+        margin-left: 10px;  
+        display: flex;
+    }
+
+    .glass_bord { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text_field {
+        max-width: 150px;
+        font-size: 13px;
+        cursor: default;
+        padding: 5px;
+    }
+  }
+  
